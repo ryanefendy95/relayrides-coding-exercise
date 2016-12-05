@@ -1,0 +1,51 @@
+----------------------
+Command Line Arguments
+----------------------
+
+Example:  
+
+$ make build
+$ make cli // start command line interface
+
+or 
+
+javac Main.java Db.java TransactionManager.java
+java Main   // for command line input
+java Main < locationoffile.txt  // for file input
+
+--------------------------
+Sample Run with Test Input
+--------------------------
+
+n2-49-89:SimpleDatabse ryanefendy$ make
+javac Main.java Db.java TransactionManager.java
+n2-49-89:SimpleDatabse ryanefendy$ java Main < test_input/test1.txt
+10
+NULL
+
+n2-49-89:SimpleDatabse ryanefendy$ java Main < test_input/test2.txt
+2
+0
+1
+
+n2-49-89:SimpleDatabse ryanefendy$ java Main < test_input/test3.txt
+10
+20
+10
+NULL
+
+n2-49-89:SimpleDatabse ryanefendy$ java Main < test_input/test4.txt
+40
+No Transaction
+No Transaction
+
+n2-49-89:SimpleDatabse ryanefendy$ java Main < test_input/test5.txt
+50
+NULL
+60
+60
+
+n2-49-89:SimpleDatabse ryanefendy$ java Main < test_input/test6.txt
+1
+0
+1
